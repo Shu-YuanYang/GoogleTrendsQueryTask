@@ -1,1 +1,0 @@
-ReferenceError: trendingSearches is not defined
