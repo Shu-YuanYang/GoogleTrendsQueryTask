@@ -11,7 +11,7 @@ cron.schedule("00 12 * * *", () => {
 	client_run(CONFIG.connection_strings.mongodb_main, async (DBClient) => {
 		let doc_counter = 2;
 
-		// Get trends from current day:
+		// 1. Get trends from current day:
 		let currentTimestamp = Date.now();
 		let currentDate = new Date(currentTimestamp);
 		let GCP_daily_trends = await get_daily_trends(currentDate);
@@ -29,7 +29,7 @@ cron.schedule("00 12 * * *", () => {
 		if (0 < GCP_daily_trends.length) await insert_doc(DBClient, "GCPDocDB", "CL_GOOGLE_DAILY_TREND", doc);
 		--doc_counter;
 
-		// Get trends from the previous day:
+		// 2. Get trends from the previous day:
 		let previousDate = new Date(Date.now());
 		previousDate.setDate(previousDate.getDate() - 1);
 		let previousTimestamp = previousDate.valueOf();
