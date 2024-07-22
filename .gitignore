@@ -1,2 +1,2 @@
-/error_logs/*
-/node_modules/*
+error_logs/*
+node_modules/*
