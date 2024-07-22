@@ -1,5 +1,0 @@
-{
-	"connection_strings": {
-		"mongodb_main": "mongodb+srv://cloudsharpadmin:Em53e6LWJKwHJKKr@cloudsharp-mongo.xiaxgpf.mongodb.net/?retryWrites=true&w=majority&appName=CloudSharp-Mongo"
-	}
-}
