@@ -3,6 +3,24 @@
     "@google-cloud/logging": "^11.1.0",
     "google-trends-api": "^4.9.2",
     "mongodb": "^6.8.0",
-    "node-cron": "^3.0.3"
-  }
+    "node-cron": "^3.0.3",
+    "node-log-service": "github:CloudSharp-Systems/NodeLogService#NPMPackage"
+  },
+  "name": "trendstest",
+  "description": "Recurring daily jobs to fetch trending searches from Google Trends (https://trends.google.com/trends/trendingsearches/daily?geo=US&hl=en-GB);",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shu-YuanYang/GoogleTrendsQueryTask.git"
+  },
+  "author": "Shu-Yuan Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shu-YuanYang/GoogleTrendsQueryTask/issues"
+  },
+  "homepage": "https://github.com/Shu-YuanYang/GoogleTrendsQueryTask#readme"
 }
