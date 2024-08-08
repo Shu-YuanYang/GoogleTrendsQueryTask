@@ -3,7 +3,12 @@ const fs = require("node:fs");
 
 
 
-const client_run = async (connection_str, job) => {
+
+const client_run = async (connectionConfigFileName, job) => {
+
+	const connectionConfig = JSON.parse(fs.readFileSync(connectionConfigFileName).toString());
+	const connection_str = connectionConfig.connection_string;
+
 	const client = new MongoClient(connection_str);
 	await client.connect();
 

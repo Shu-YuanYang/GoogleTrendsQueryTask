@@ -3,4 +3,4 @@ node_modules/*
 
 # ignore config files
 config.json
-gcp_service_account_secrets.json
+credentials/*
