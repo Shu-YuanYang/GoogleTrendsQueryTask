@@ -107,8 +107,8 @@ const runScheduledJob = async () => {
 
 
 // Run jobs:
-//cron.schedule("00 12 * * *", () => {
+cron.schedule("00 12 * * *", () => {
 	runScheduledJob().catch(err => {
 		fs.writeFileSync(`error_logs/${current_date.toISOString()}_main_job.txt`, err.toString());
 	});
-//});
+});
