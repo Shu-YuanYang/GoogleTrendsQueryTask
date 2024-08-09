@@ -4,7 +4,7 @@
     "google-trends-api": "^4.9.2",
     "mongodb": "^6.8.0",
     "node-cron": "^3.0.3",
-    "node-log-service": "github:CloudSharp-Systems/NodeLogService#NPMPackage"
+    "node-log-service": "github:CloudSharp-Systems/NodeLogService#main"
   },
   "name": "trendstest",
   "description": "Recurring daily jobs to fetch trending searches from Google Trends (https://trends.google.com/trends/trendingsearches/daily?geo=US&hl=en-GB);",
